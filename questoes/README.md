@@ -1,11 +1,12 @@
 
-#Questão 1
+# Questão 1
 
-##ER
+## ER
 
-##DDL
 
-#Questão 2
+## DDL
+
+# Questão 2
 
 SELECT * FROM dbo.funcionario AS funcionario
                                             INNER JOIN dbo.funcionario_has_posto_trabalho AS has_posto_trabalho ON funcionario.id_funcionario            =  has_posto_trabalho.funcionario_id_funcionario

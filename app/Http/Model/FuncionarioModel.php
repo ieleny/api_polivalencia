@@ -13,7 +13,7 @@ class FuncionarioModel
 
         try {
 
-            $result = DB::select("  SELECT * FROM dbo.posto_trabalho AS posto_trabalho
+            $result = DB::select("  SELECT nome_posto_trabalho,pais_posto_trabalho FROM dbo.posto_trabalho AS posto_trabalho
                                         WHERE   
                                             posto_trabalho.pais_posto_trabalho LIKE '%BRAZIL%';
                                 ");
@@ -22,7 +22,7 @@ class FuncionarioModel
         }
 
         if(empty($result)){
-            $result = json_encode(["msg" => "Não nenhum funcionário, que trabalhe no brasil"]);
+            $result = json_encode(["msg" => "Nenhum funcionario trabalha no brasil"]);
         }
 
         return $result;
