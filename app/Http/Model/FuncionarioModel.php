@@ -22,7 +22,7 @@ class FuncionarioModel
         }
 
         if(empty($result)){
-            $result = "Não existe nenhum estoque deste produto";
+            $result = json_encode(["msg" => "Não nenhum funcionário, que trabalhe no brasil"]);
         }
 
         return $result;
