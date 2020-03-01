@@ -1,11 +1,12 @@
 
-# Questão 1
+# PHP + SQL SERVER
+## Questão 1
 
-## ER
+### ER
 
 <img src="https://github.com/ieleny/api_polivalencia/blob/master/base_dados/ER/er_api.PNG">
 
-## DDL
+### DDL
 <pre>
     CREATE DATABASE polivalencia
 
@@ -46,7 +47,7 @@
     );
 </pre>
 
-# Questão 2
+## Questão 2
 <pre>
     SELECT * FROM dbo.funcionario AS funcionario
         INNER JOIN dbo.funcionario_has_posto_trabalho AS has_posto_trabalho ON funcionario.id_funcionario   =  has_posto_trabalho.funcionario_id_funcionario
@@ -56,3 +57,58 @@
 
 </pre>
 
+# SQL
+## Questão 1
+<pre>
+
+    INSERT INTO [dbo].[Marca]
+           ([Id]
+           ,[Nome]
+           ,[Pais]
+           ,[Fornecedor]
+     VALUES
+           (1 , 'Bastremp','Brazil','AMAZON')
+GO
+
+INSERT INTO [dbo].[Produtos]
+           ([Id]
+           ,[Nome]
+           ,[Peso]
+           ,[IdMarca])
+     VALUES
+           (1,'Geladeira',10000,1)
+GO
+
+INSERT INTO [dbo].[Marca]
+           ([Id]
+           ,[Nome]
+           ,[Pais]
+           ,[Fornecedor]
+     VALUES
+           (2 , 'Valfenda','Brazil','AMAZON')
+GO
+
+INSERT INTO [dbo].[Produtos]
+           ([Id]
+           ,[Nome]
+           ,[Peso]
+           ,[IdMarca])
+     VALUES
+           (1,'Parafuso',0.1,2)
+GO
+
+</pre>
+
+## Questão 2
+<pre>
+
+    SELECT 
+        produto.id,
+        produto.nome
+    FROM dbo.Marca AS marca
+        INNER JOIN  dbo.Produtos AS produtos ON marca.id = produtos.IdMarca
+    WHERE 
+        marca.Nome like '%Valfenda%'
+
+
+</pre>
