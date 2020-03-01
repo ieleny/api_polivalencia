@@ -112,3 +112,29 @@ GO
 
 
 </pre>
+
+# NOSQL
+## Questão 1
+Um banco NoSql, é uma tecnologia que não faz relações entre tabelas e com alto desempenho. Por isso que as "tabelas" se chamam Collections que são em formato em JSON. Por ser nesse formato são utilizados principalmente em projetos de BI(Business Intelingence). Exemplo: MogoDB
+
+
+# API - LINK
+https://github.com/ieleny/api_polivalencia
+
+# PHP e Orientado a Objetos
+## Questão 1
+
+### O que é Modificadore de acesso?
+São responsaveis por garantir niveis de acesso para as classe, objetos e metodos. Informando quais poderão ser utilizadas dando mais segurança a alterações de desenvolvedores futuros. Existem 3 tipos de modificadoes de acesso são eles publico, privado e protegido.
+
+### Publico
+São classes, objetos e metodos, podem ser acessada por qualquer classe. 
+
+### Privado 
+São classes, objetos e metodos, podem ser acessada de sua propria classe.
+
+### Protected
+São classes, objetos e metodos, podem ser acessadas por classes que possue alguma hereditariedade. 
+
+
+
