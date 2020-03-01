@@ -3,7 +3,7 @@
 
 ## ER
 
-<img src="smiley.gif" alt="Smiley face" height="42" width="42">
+<img src="https://github.com/ieleny/api_polivalencia/blob/master/base_dados/ER/er_api.PNG">
 
 ## DDL
 <pre>
