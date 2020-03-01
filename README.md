@@ -1,3 +1,3 @@
 
 # Informações
-É preciso executar o compose install. 
+É preciso executar o <bold>composer install</bold>. 
